@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3001
 
+app.use(express.json());
+
 const cityRoutes = require("./routes/cityRoute");
 app.use("/", cityRoutes);
 
