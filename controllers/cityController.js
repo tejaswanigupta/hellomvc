@@ -1,6 +1,11 @@
+var cities = require("../models/cityData") 
+
 
 const getCities = (request, response) => {
-    response.send('Get cities.');
+    response.json({
+        cities: cities
+    });
+  
 };
 
 const getCountries = (request, response) => {
